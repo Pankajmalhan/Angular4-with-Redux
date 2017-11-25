@@ -1,6 +1,10 @@
-# BugTodoApp
+# State Management with Redux
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
+If we are going to create a bigger application in Angular then it will be better to use a state management architecture that can manage the state of our application. This state management technique will definitely increase the performance of our application. 
+In this application we learn about the "Redux" that is state management technique to manage the state of application.Redux is an open-source JavaScript library designed for managing application state. It is primarily used together with React or angular js for building user interfaces
+
+#BugTodoApp
+In this project we will create a bug management system, we add the functionality to add the new bugs, update the current status of the bug and also show the bug list and diffrent status counts of the bugs. We will use the Redux to manage the state of our application.
 
 ## Development server
 
@@ -14,15 +18,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+## Install Packages
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-# Angular4-with-Redux
+Run 'npm install' command to install all the node_modules packgages.
