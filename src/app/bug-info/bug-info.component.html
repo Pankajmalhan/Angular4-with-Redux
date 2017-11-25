@@ -1,0 +1,30 @@
+<div class="card" style="width:400px">
+    <div class="card-body">
+      <h4 class="card-title">Bug Number: {{(bugNumber)}}</h4>
+      <div class="card-blockquote">
+        <span style="font-weight: bold;">Priority: {{bugInfo?.priority}}</span>
+        <span style="float: right;font-weight: bold;">Status: {{bugInfo?.status}}</span>
+        <br/>
+        <span style="font-weight: bold;">Project: {{bugInfo?.project}}</span>
+      </div>
+      <br/>
+      <p class="card-text">{{bugInfo?.description}}</p>
+      <div>
+          <select
+          type="text" class="form-control"
+          [(ngModel)]="status"
+          (change)="ChangeStatus()"
+          >
+          <option value="Assign">Assign</option>
+          <option value="Pending">Pending</option>
+          <option value="Close">Close</option>
+          <option value="Reopen">Reopen</option>
+          </select>
+      </div>
+      <br/>
+      
+      <input type="button" value="Submit" (click)="submit()" class="btn btn-primary"/>
+    </div>
+  </div>
+  <br>
+  

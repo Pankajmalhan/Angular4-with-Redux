@@ -1,0 +1,43 @@
+<h4>Bug List</h4>
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">BugId</th>
+        <th scope="col">Project</th>
+        <th scope="col">Description</th>
+        <th scope="col">Current Status</th>
+        <th scope="col">Priority</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of bugList | async">
+        <th scope="row">
+          <a href=""  data-toggle="modal" (click)="openPopupModel(data.bugId)"
+           data-target="#exampleModal"> {{data.bugId}}</a>
+        </th>
+        <td >{{data.project}}</td>
+        <td>{{data.description}}</td>
+        <td>{{data.status}}</td>
+        <td>{{data.priority}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Bug Description</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+           <app-bug-info></app-bug-info>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,56 @@
+<div class="card">
+  <h4 class="card-header">Bug Dashboard</h4>
+  <div class="card-body">
+    <h4 class="card-title">Add new bug</h4>
+
+    <form (ngSubmit)="submitForm()" #form="ngForm">
+      <div class="form-row">
+        <div class="col-md-6 col-sm-12">
+          <textarea
+           type="text" class="form-control"
+           rows="3"
+           placeholder="Description" id="description"
+           [(ngModel)]="bugObject.description"
+           name="description"
+            ></textarea>
+
+        </div>
+        
+      </div>
+      <br/>
+      <div class="form-row">
+          <div class="col-auto">
+              <select
+              type="text" class="form-control"
+              placeholder="Project" id="project"
+              name="project"
+              [(ngModel)]="bugObject.project"
+              >
+              <option value="Bike">Bike</option>
+              <option value="Car">Car</option>
+              <option value="Health">Health</option>
+              <option value="Home">Home</option>
+              <option value="ProHealth">ProHealth</option>
+              </select>
+            </div>
+            <div class="col-auto">
+                  <select
+                   type="text" class="form-control"
+                   placeholder="Priority" id="priority"
+                   name="priority"
+                   [(ngModel)]="bugObject.priority"
+                   >
+                   <option value="Low">Low</option>
+                   <option value="Medium">Medium</option>
+                   <option value="High">High</option>
+                   </select>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-info">Add Bug</button>
+            </div>
+      </div>
+    </form>
+    <br/>
+    <button type="button" class="btn btn-danger" (click)="clearList()">Clear List</button>
+  </div>
+</div>
