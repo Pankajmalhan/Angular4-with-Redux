@@ -24,4 +24,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Install Packages
 
-Run 'npm install' command to install all the node_modules packgages.
+Run `npm install` command to install all the node_modules packgages.
