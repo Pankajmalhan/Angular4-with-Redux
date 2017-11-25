@@ -6,6 +6,10 @@ In this application we learn about the "Redux" that is state management techniqu
 ## BugTodoApp
 In this project we will create a bug management system, we add the functionality to add the new bugs, update the current status of the bug and also show the bug list and diffrent status counts of the bugs. We will use the Redux to manage the state of our application.
 
+![alt text](https://github.com/Pankajmalhan/Angular4-with-Redux/blob/master/src/assets/images/1000.png)
+
+![alt text](https://github.com/Pankajmalhan/Angular4-with-Redux/blob/master/src/assets/images/1001.png)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
